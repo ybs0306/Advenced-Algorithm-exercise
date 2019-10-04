@@ -1,9 +1,6 @@
 /*
 * create on : 2019-10-01
 * create on : kinoshita kenta <ybs0306748@gmail.com>
-
-* update on : 2019-10-02
-* update by : kinoshita kenta <ybs0306748@gmail.com>
 */
 
 #include<iostream>
