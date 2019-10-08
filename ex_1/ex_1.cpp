@@ -18,7 +18,7 @@ void re_bit(int p_len, int k, double prob[], int deep, int cmp, string str, vect
         //cout << str << endl;
     }
     else{
-        //未連續重複k-1個1(不能讓連續k個發生), 給予0與1兩個分支
+        //未連續重複k-1個1(不能讓連續k個發生), 給予0與1兩個情形
         if(cmp < k-1){
             re_bit(p_len, k, prob, deep+1, 0    , str+'0', datas, w*(1-prob[deep]));
             re_bit(p_len, k, prob, deep+1, cmp+1, str+'1', datas, w*(prob[deep])  );
@@ -56,7 +56,10 @@ int main(){
         }
 
         //顯示到小數點下5位
-        cout << fixed << setprecision(5) << ans << endl;
+        if(p_len < k)
+            cout << fixed << setprecision(5) << 1 << endl;
+        else
+            cout << fixed << setprecision(5) << ans << endl;
         cout.unsetf(ios::fixed);
 
         //free出prob的陣列
