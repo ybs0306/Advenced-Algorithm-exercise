@@ -3,9 +3,9 @@
 * create on : kinoshita kenta <ybs0306748@gmail.com>
 */
 
-#include<iostream>
-#include<vector>
-#include<iomanip>
+#include <iostream>
+#include <vector>
+#include <iomanip>
 
 using namespace std;
 
